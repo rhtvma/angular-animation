@@ -1,2 +1,5 @@
-# angular_animation
-Working with animations in  angular
+# AngularAnimationBoilerplate
+
+
+## Build Compoent
+ ng g c layout/contactUs

@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-animations": {
+    "angular-animation-boilerplate": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-animations",
+            "outputPath": "dist/angular-animation-boilerplate",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-animations:build"
+            "browserTarget": "angular-animation-boilerplate:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-animations:build:production"
+              "browserTarget": "angular-animation-boilerplate:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-animations:build"
+            "browserTarget": "angular-animation-boilerplate:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-animations:serve"
+            "devServerTarget": "angular-animation-boilerplate:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-animations:serve:production"
+              "devServerTarget": "angular-animation-boilerplate:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-animations"
+  "defaultProject": "angular-animation-boilerplate"
 }
